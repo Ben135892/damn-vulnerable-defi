@@ -81,6 +81,7 @@ describe("Compromised challenge", function () {
         const key2 =
             "0x208242c40acdfa9ed889e685c23547acbed9befc60371e9875fbcd736340bb48";
         let oracle1 = new ethers.Wallet(key1, ethers.provider);
+        
         let oracle2 = new ethers.Wallet(key2, ethers.provider);
 
         oracle1 = this.oracle.connect(oracle1);
